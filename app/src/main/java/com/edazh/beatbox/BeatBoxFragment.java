@@ -93,4 +93,9 @@ public class BeatBoxFragment extends Fragment {
     //endregion
 
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mBeatBox.release();
+    }
 }
